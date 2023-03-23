@@ -4,7 +4,6 @@ import { Product } from "../../Product";
 export async function createProduct(req: Request, res: Response) {
   try {
     const imagePath = req.file?.filename;
-    console.log(imagePath);
 
     const { name, description, price, category, ingredients } = req.body;
 
